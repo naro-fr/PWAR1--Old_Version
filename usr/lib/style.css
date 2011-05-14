@@ -1,0 +1,219 @@
+.fenetre {
+        position: absolute; /*On place notre fenêtre en position absolute car celle ci pourra être bougée*/
+	-moz-border-radius:8px;
+	border-radius:8px;
+	box-shadow:0em 0em 1em 2px,0em 2.5em 1em 2px;
+	-moz-box-shadow:0em 0em 1em 2px,0em 2.5em 1em 2px;
+}
+input {
+-moz-border-radius:10px;
+border-radius:10px;
+background-color:white;
+border:1px solid black;
+background-position:center center;
+cursor: url("cursors/beam_r.cur"), text;
+}
+input[type="button"] {
+background-image:url(../img/button.png);
+cursor: url("cursors/arrow_r.cur"), default;
+}
+input[type="submit"] {
+background-image:url(../img/button.png);
+cursor: url("cursors/arrow_r.cur"), default;
+}
+button[type="button"] {
+-moz-border-radius:10px;
+border-radius:10px;
+background-image:url(../img/haut_centre.png);
+border:1px solid black;
+background-position:center center;
+cursor: url("cursors/arrow_r.cur"), default;
+}
+.fenetre .fendist {
+width:100%;
+height:100%;
+}
+iframe {
+border:0;
+}
+.imgmenu {
+float: left;
+vertical-align: middle;
+height: 100%;
+}
+.imgferm .fermt {
+display: none;
+}
+.imgferm:hover .ferm {
+display: none;
+}
+.imgferm:hover .fermt {
+display: inline;
+}
+.imgmin .minit {
+display: none;
+}
+.imgmin:hover .mini {
+display: none;
+}
+.imgmin:hover .minit {
+display: inline;
+}
+.imgmax .maxit {
+display: none;
+}
+.imgmax:hover .maxi {
+display: none;
+}
+.imgmax:hover .maxit {
+display: inline;
+}
+.haut {
+        height: 28px; /*Ici on indique que le haut fera 28px de longueur, vous pouvez changer cela si votre fenêtre a un design différent*/
+}
+.milieu {
+        height: 100%; /*Ici on dit au milieu de prendre toute la longueur possible*/
+}
+.bas {
+        height: 8px; /*Ici on indique la taille du bas, comme pour le haut*/
+}
+.haut_gauche {
+        width: 8px; /*On indique la largeur du coin haut gauche*/
+        height: 100%; /*On lui indique de prendre toute la longueur possible.*/
+        background-image: url(../img/haut_gauche.png);
+        float: left; /*On le positionne à gauche*/
+}
+.haut_droite { /*On fait de même avec le coin haut droit*/
+        width: 8px;
+        height: 100%;
+        background-image: url(../img/haut_droite.png);
+        float: right;
+}
+.haut_centre {
+        height:100%;
+        margin-left: 8px; /*On fait cela pour pas que le centre se retrouve sous les coins*/
+        margin-right: 8px;
+        background-image: url(../img/haut_centre.png);
+	text-align: center;
+	font: bold 18px Arial, Helvetica, sans-serif;
+	cursor: url("cursors/move_r.cur"), default;
+	overflow:hidden;
+}
+
+.milieu_gauche { /*On repete les mêmes opérations pour les autres divs*/
+        width: 8px;
+        height: 100%;
+        background-image: url(../img/milieu_gauche.png);
+        float: left;
+}
+.milieu_droite {
+        width: 8px;
+        height: 100%;
+        background-image: url(../img/milieu_droite.png);
+        float: right;
+	cursor:url("cursors/size3_r.cur"), se-resize;
+}
+.milieu_centre {
+        height: 100%;
+        background-color: #e3e3e3;
+        margin-left: 8px;
+        margin-right: 8px;
+	overflow:auto;
+}
+
+.bas_gauche {
+        width: 8px;
+        height: 100%;
+        background-image: url(../img/bas_gauche.png);
+        float: left;
+}
+.bas_droite {
+        width: 8px;
+        height: 100%;
+        background-image: url(../img/bas_droite.png);
+        float: right;
+	cursor:url("cursors/size2_r.cur"), e-resize;
+}
+.bas_centre {
+        height: 100%;
+        background-image: url(../img/bas_centre.png);
+        margin-left: 8px;
+        margin-right: 8px;
+	cursor:url(cursors/size4_r.cur), s-resize;
+}
+
+img {
+	border: none;
+}
+
+/* dock - top */
+.dock {
+	position: relative; 
+	height: 50px; 
+	text-align: center;
+	z-index : 190;
+}
+.dock-container {
+	position: absolute;
+	height: 50px;
+	background: url(../img/dock-bg2.gif);
+	padding-left: 20px;
+}
+a.dock-item {
+	display: block;
+	width: 40px;
+	color: #000;
+	position: absolute;
+	top: 0px;
+	text-align: center;
+	text-decoration: none;
+	font: bold 12px Arial, Helvetica, sans-serif;
+}
+.dock-item img {
+	border: none; 
+	margin: 5px 10px 0px; 
+	width: 100%; 
+}
+.dock-item span {
+	display: none; 
+	padding-left: 20px;
+}
+
+/* dock2 - bottom */
+#dock2 {
+	width: 100%;
+	bottom: 0px;
+	position: absolute;
+	left: 0px;
+}
+.dock-container2 {
+	position: absolute;
+	height: 50px;
+	background: url(../img/dock.png);
+	padding-left: 20px;
+}
+a.dock-item2 {
+	display: block; 
+	font: bold 12px Arial, Helvetica, sans-serif;
+	width: 40px; 
+	color: #000; 
+	bottom: 0px; 
+	position: absolute;
+	text-align: center;
+	text-decoration: none;
+}
+.dock-item2 span {
+	display: none;
+	padding: 2px;
+	padding-left:20px;
+	border-radius:10px;
+	-moz-border-radius:10px;
+	opacity:0.9;
+	background:black;
+	color:white;
+}
+.dock-item2 img {
+	border: none; 
+	margin: 5px 10px 0px; 
+	width: 100%; 
+}

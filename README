@@ -7,9 +7,12 @@ Premier Web-os Arrogant Réussi par la Naro-team. Pour nous contacter, naro[at]l
 License CC-BY-NC-SA: http://creativecommons.org/licenses/by-nc-sa/2.0/fr/
 
 ======================================================================
-Liste des ajouts à faire pour la version 1.10:
-*Divers jeu et ajouts, vous pouvez faire tout ce que vous voulez.
-*Compléter les liens mort du menu.
+La version 1.10 se verra être totalement différente de la version 1.04, elle sera entièrement recodée depuis zéro. Les améliorations et changements lors du codage sont les suivants:
+*Meilleurs gestion du système de fenêtre
+*Terminal à améliorer
+*Et surtout le plus gros: système de compte avec mot de passe et login gérée par MySQL, ainsi qu'une logithèque reprenant le principe de paquet Debian.
+Ces idées ci-dessus n'ont pas encore été mûrement réfléchi, elles sont très susceptible de modification pendant le développement.
+
 
 Merci pour votre participation et de soutenir PWAR.
 
